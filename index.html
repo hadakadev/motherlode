@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Meme Motherlode</title>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <style>
+      body {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.2s ease 0.2s, visibility 0.2s ease 0.2s;
+      }
+
+      .loaded body {
+        opacity: 1;
+        visibility: visible;
+      }
+    </style>
+    <link rel="stylesheet" href="css/style.min.css?_v=20241202114858" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__left">
+            <a href="#" target="_blank" class="header__buy">
+              <img src="img/header/star.png" alt="Star" />
+              <span>BUY NOW</span>
+            </a>
+            <div class="header__menu menu">
+              <button type="button" class="menu__icon icon-menu">
+                <span></span>
+              </button>
+              <nav class="menu__body">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="#" data-goto=".about" class="menu__link">About</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" data-goto=".how" class="menu__link"
+                      >How to buy</a
+                    >
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" data-goto=".tokenomics" class="menu__link"
+                      >Tokenomics
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" data-goto=".join" class="menu__link">Join Us</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="header__right">
+            <div
+              id="time-now"
+              class="header__time"
+              data-da=".menu__body, 599.98, 1"
+            ></div>
+            <div class="header__social">
+              <a
+                href="https://x.com/gnomeinbits"
+                target="_blank"
+                class="header__social-item"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M19 2H14V3H13V4V5H12V6H11V7H12V8H9V7H6V6H4V5H3V4H2V3H1V4V5V6V7V8H2V9H3V10H1V11V12H2V13H4V14H2V15H4V16H5V17H7V18H5V19H0V20H2V21H5V22H10V21H13V20H15V19H16V18H17V17H18V16H19V15H20V14V13H21V12V11V10H22V9V8V7V6H23V5H24V4H23V3H24V2H22V3H21V4H20V3H19V2ZM23 4V5H22V4H23Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://t.me/GnomeinBits"
+                target="_blank"
+                class="header__social-item"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M19.6596 4.1647H17.617V5.3294H14.5532V6.49409H11.1746V7.65879H8.17021V8.82349H5.10638V9.98818H2.04255V11.1529H0V12.6088H2.04255V13.7735H4.08511V14.9381L4.7234 14.99H5.87234L7.14894 14.9641L7.20485 18.448L7.2766 22L10.3054 21.9991V20.7616H12.5106V19.8881H14.5532V20.7616H15.5745V21.8678H17.8723V19.6514H18.8936V17.2675H19.9149V14.8703H20.9362V12.6088H21.9574V10.2794H22.9787V7.94996H24V3H19.6596V4.1647Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="page">
+        <section class="page__hero hero">
+          <div class="hero__bg">
+            <img src="img/hero/bg.jpg" alt="Image" />
+            <img src="img/hero/bg-mob.jpg" alt="Image" />
+          </div>
+          <div class="hero__container">
+            <h1 class="hero__title">
+              <img src="img/hero/title.png" alt="Welcome to Meme Motherlode" />
+            </h1>
+            <div class="hero__body">
+              <div class="hero__image">
+                <img src="img/hero/01.png" alt="Image" />
+              </div>
+              <div class="hero__actions">
+                <a href="#" target="_blank" class="hero__buy">
+                  <img src="img/hero/BuyButton.svg" alt="Buy Now" />
+                </a>
+                <div class="hero__social">
+                  <a
+                    href="https://x.com/gnomeinbits"
+                    target="_blank"
+                    class="hero__social-item"
+                  >
+                    <img src="img/hero/x.png" alt="X" />
+                    <span>twitter.com</span>
+                  </a>
+                  <a
+                    href="https://t.me/GnomeinBits"
+                    target="_blank"
+                    class="hero__social-item"
+                  >
+                    <img src="img/hero/tel.png" alt="Telegram" />
+                    <span>Telegram</span>
+                  </a>
+                  <a href="https://dextools.io/app/en/ether/pair-explorer/0xcomingsoon" target="_blank" class="hero__social-item">
+                    <img src="img/hero/dext.png" alt="Dextools" />
+                    <span>dextools.io</span>
+                  </a>
+                  <!-- <a href="#" target="_blank" class="hero__social-item">
+                    <img src="img/hero/rad.png" alt="Raydium" />
+                    <span>raydium.io</span>
+                  </a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="page__line line">
+          <div class="line__row">
+            <img src="img/line-item.png" alt="Meme Motherlode" />
+            <img src="img/line-item.png" alt="Meme Motherlode" />
+            <img src="img/line-item.png" alt="Meme Motherlode" />
+            <img src="img/line-item.png" alt="Meme Motherlode" />
+            <img src="img/line-item.png" alt="Meme Motherlode" />
+            <img src="img/line-item.png" alt="Meme Motherlode" />
+            <img src="img/line-item.png" alt="Meme Motherlode" />
+          </div>
+          <div class="line__row">
+            <img src="img/line-item.png" alt="Meme Motherlode" />
+            <img src="img/line-item.png" alt="Meme Motherlode" />
+            <img src="img/line-item.png" alt="Meme Motherlode" />
+            <img src="img/line-item.png" alt="Meme Motherlode" />
+            <img src="img/line-item.png" alt="Meme Motherlode" />
+            <img src="img/line-item.png" alt="Meme Motherlode" />
+            <img src="img/line-item.png" alt="Meme Motherlode" />
+          </div>
+        </div>
+        <section class="page__about about" data-watch="navigator">
+          <div class="about__bg">
+            <img src="img/about/bg.jpg" alt="Image" />
+          </div>
+          <div class="about__container">
+            <div class="about__body">
+              <div class="about__body-header">
+                <div class="about__body-header-top">
+                  <div class="about__body-header-top-circles">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8Z"
+                        stroke="white"
+                        stroke-width="2"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8Z"
+                        stroke="white"
+                        stroke-width="2"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8Z"
+                        stroke="white"
+                        stroke-width="2"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="about__body-header-top-title">About "$MOTHERLODE"</h3>
+                  <div class="about__body-header-top-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M19 6V7H20V21H19V22H5V21H4V3H5V2H15V3H16V4H17V5H18V6H19ZM17 19H18V10H12V4H7V5H6V19H7V20H17V19ZM16 8V7H15V6H14V8H16ZM15 14V12H9V14H15ZM15 17V15H9V17H15Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="about__body-header-bottom">
+                  <span>File</span>
+                  <span>Edit</span>
+                  <span>View</span>
+                </div>
+              </div>
+              <div class="about__body-main">
+                <div class="about__body-content">
+                  <h2 class="about__body-title">
+                    <img src="img/about/title.png" alt="About Gnome" />
+                  </h2>
+                  <div class="about__body-text">
+                    <p>
+                      Welcome to the "Meme Motherlode" coin, a groundbreaking cryptocurrency inspired by the chaotic brilliance of internet memes and the visionary spark of AI innovation from xAI's Grok Imagine platform! Join our vibrant community as we mine the ultimate lode of laughter and value in the crypto universe!
+                  </div>
+                </div>
+                <div class="about__body-image">
+                  <img src="img/about/01.jpg" alt="Image" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about__line line">
+            <div class="line__row">
+              <img src="img/line-item.png" alt="Meme Motherlode" />
+              <img src="img/line-item.png" alt="Meme Motherlode" />
+              <img src="img/line-item.png" alt="Meme Motherlode" />
+              <img src="img/line-item.png" alt="Meme Motherlode" />
+              <img src="img/line-item.png" alt="Meme Motherlode" />
+              <img src="img/line-item.png" alt="Meme Motherlode" />
+              <img src="img/line-item.png" alt="Meme Motherlode" />
+            </div>
+            <div class="line__row">
+              <img src="img/line-item.png" alt="Meme Motherlode" />
+              <img src="img/line-item.png" alt="Meme Motherlode" />
+              <img src="img/line-item.png" alt="Meme Motherlode" />
+              <img src="img/line-item.png" alt="Meme Motherlode" />
+              <img src="img/line-item.png" alt="Meme Motherlode" />
+              <img src="img/line-item.png" alt="Meme Motherlode" />
+              <img src="img/line-item.png" alt="Meme Motherlode" />
+            </div>
+          </div>
+        </section>
+        <section class="page__how how" data-watch="navigator">
+          <div class="how__bg">
+            <img src="img/how/bg.png" alt="Image" />
+          </div>
+          <div class="how__container">
+            <div class="how__image">
+              <img src="img/how/01.png" alt="Image" />
+            </div>
+            <div class="how__content">
+              <div class="how__items">
+                <article
+                  class="how__item"
+                  data-watch-threshold="0.75"
+                  data-watch-once
+                  data-watch
+                >
+                  <div class="how__item-header">
+                    <div class="how__item-header-top">
+                      <div class="how__item-header-top-circles">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8Z"
+                            stroke="white"
+                            stroke-width="2"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8Z"
+                            stroke="white"
+                            stroke-width="2"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8Z"
+                            stroke="white"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </div>
+                      <h3 class="how__item-header-top-title">How to buy (1)</h3>
+                      <div class="how__item-header-top-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M19 6V7H20V21H19V22H5V21H4V3H5V2H15V3H16V4H17V5H18V6H19ZM17 19H18V10H12V4H7V5H6V19H7V20H17V19ZM16 8V7H15V6H14V8H16ZM15 14V12H9V14H15ZM15 17V15H9V17H15Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="how__item-body">
+                    <h3>
+                      <img src="img/how/s1.png" alt="Step 1" />
+                    </h3>
+                    <p>
+                      Download metamask or your wallet of choice from the app store or google play store for free. Desktop users, download the google chrome extension by going to metamask.io.
+                    </p>
+                  </div>
+                </article>
+                <article
+                  class="how__item"
+                  data-watch-threshold="0.75"
+                  data-watch-once
+                  data-watch
+                >
+                  <div class="how__item-header">
+                    <div class="how__item-header-top">
+                      <div class="how__item-header-top-circles">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8Z"
+                            stroke="white"
+                            stroke-width="2"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8Z"
+                            stroke="white"
+                            stroke-width="2"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8Z"
+                            stroke="white"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </div>
+                      <h3 class="how__item-header-top-title">How to buy (2)</h3>
+                      <div class="how__item-header-top-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M19 6V7H20V21H19V22H5V21H4V3H5V2H15V3H16V4H17V5H18V6H19ZM17 19H18V10H12V4H7V5H6V19H7V20H17V19ZM16 8V7H15V6H14V8H16ZM15 14V12H9V14H15ZM15 17V15H9V17H15Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="how__item-body">
+                    <h3>
+                      <img src="img/how/s2.png" alt="Step 2" />
+                    </h3>
+                    <p>
+                      Have ETH in your wallet to switch to $MOTHERLODE. If you don’t have any ETH, you can buy directly on metamask, transfer from another wallet, or buy on another exchange and send it to your wallet.
+                    </p>
+                  </div>
+                </article>
+                <article
+                  class="how__item"
+                  data-watch-threshold="0.75"
+                  data-watch-once
+                  data-watch
+                >
+                  <div class="how__item-header">
+                    <div class="how__item-header-top">
+                      <div class="how__item-header-top-circles">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8Z"
+                            stroke="white"
+                            stroke-width="2"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8Z"
+                            stroke="white"
+                            stroke-width="2"
+                          />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8Z"
+                            stroke="white"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </div>
+                      <h3 class="how__item-header-top-title">How to buy (3)</h3>
+                      <div class="how__item-header-top-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M19 6V7H20V21H19V22H5V21H4V3H5V2H15V3H16V4H17V5H18V6H19ZM17 19H18V10H12V4H7V5H6V19H7V20H17V19ZM16 8V7H15V6H14V8H16ZM15 14V12H9V14H15ZM15 17V15H9V17H15Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="how__item-body">
+                    <h3>
+                      <img src="img/how/s3.png" alt="Step 3" />
+                    </h3>
+                    <p>
+                      Go to app.uniswap.org in google chrome or on the browser inside your Metamask app. Paste the $MOTHERLODE token address into Uniswap, select and confirm. And sign, switch ETH for Meme Motherlode.
+                    </p>
+                    <p>
+                      How to buy: <a target="_blank" href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0xcomingsoon">Buy on Uniswap</a>
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__tokenomics tokenomics" data-watch="navigator">
+          <div class="tokenomics__bg">
+            <img src="img/tokenomics/bg.jpg" alt="Image" />
+          </div>
+          <div class="tokenomics__container">
+            <h2 class="tokenomics__title">
+              <img src="img/tokenomics/title.png" alt="Tokenomics" />
+            </h2>
+          </div>
+          <div class="tokenomics__body pr-func">
+            <div class="tokenomics__image">
+              <img src="img/tokenomics/01.png" alt="Image" />
+            </div>
+            <div class="tokenomics__content">
+              <div class="tokenomics__content-header">
+                <div class="tokenomics__content-header-top">
+                  <div class="tokenomics__content-header-top-circles">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8Z"
+                        stroke="white"
+                        stroke-width="2"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8Z"
+                        stroke="white"
+                        stroke-width="2"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8Z"
+                        stroke="white"
+                        stroke-width="2"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="tokenomics__content-header-title">Tokenomics</h3>
+                  <div class="tokenomics__content-header-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M21 4V5H22V19H21V20H20V21H19V22H5V21H4V20H3V19H2V5H3V4H4V3H5V2H19V3H20V4H21ZM19 17H20V7H19V6H18V5H17V4H7V5H6V6H5V7H4V17H5V18H6V19H7V20H17V19H18V18H19V17ZM13 6H11V8H13V6ZM13 10H11V18H13V10Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="tokenomics__content-body">
+                <div class="tokenomics__content-row">
+                  <div class="tokenomics__content-row-left">
+                    <img src="img/tokenomics/i1.png" alt="Icon" />
+                    <span>token_supply</span>
+                  </div>
+                  <div class="tokenomics__content-row-right">
+                    <span>1 Bil</span>
+                    <span class="small"></span>
+                  </div>
+                </div>
+                <div class="tokenomics__content-row">
+                  <div class="tokenomics__content-row-left">
+                    <img src="img/tokenomics/i2.png" alt="Icon" />
+                    <span>buy/sell tax</span>
+                  </div>
+                  <div class="tokenomics__content-row-right">
+                    <span>0/0</span>
+                    <span class="large"></span>
+                  </div>
+                </div>
+                <div class="tokenomics__content-row">
+                  <div class="tokenomics__content-row-left">
+                    <img src="img/tokenomics/i3.png" alt="Icon" />
+                    <span>liqudity_pool</span>
+                  </div>
+                  <div class="tokenomics__content-row-right">
+                    <span>BURNT</span>
+                    <span class="medium"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="page__line line">
+          <div class="line__row">
+            <img src="img/line-item.png" alt="Meme Motherlode" />
+            <img src="img/line-item.png" alt="Meme Motherlode" />
+            <img src="img/line-item.png" alt="Meme Motherlode" />
+            <img src="img/line-item.png" alt="Meme Motherlode" />
+            <img src="img/line-item.png" alt="Meme Motherlode" />
+            <img src="img/line-item.png" alt="Meme Motherlode" />
+            <img src="img/line-item.png" alt="Meme Motherlode" />
+          </div>
+          <div class="line__row">
+            <img src="img/line-item.png" alt="Meme Motherlode" />
+            <img src="img/line-item.png" alt="Meme Motherlode" />
+            <img src="img/line-item.png" alt="Meme Motherlode" />
+            <img src="img/line-item.png" alt="Meme Motherlode" />
+            <img src="img/line-item.png" alt="Meme Motherlode" />
+            <img src="img/line-item.png" alt="Meme Motherlode" />
+            <img src="img/line-item.png" alt="Meme Motherlode" />
+          </div>
+        </div>
+        <section class="page__join join" data-watch="navigator">
+          <div class="join__top">
+            <div class="join__top-bg">
+              <img src="img/join/bg.jpg" alt="Image" />
+            </div>
+            <div class="join__container">
+              <div class="join__top-body">
+                <div class="join__top-up">
+                  <div class="join__top-up-content">
+                    <h2 class="join__top-up-title">
+                      <img src="img/join/title.png" alt="Join Us" />
+                    </h2>
+                    <a href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0xcomingsoon" target="_blank" class="join__top-up-buy">
+                      <img src="img/join/BuyButton.png" alt="Buy Now" />
+                    </a>
+                  </div>
+                  <div class="join__top-up-image">
+                    <img src="img/join/01.png" alt="Image" style="cursor: pointer;" onclick="window.open('https://x.com/elonmusk/status/1951974374984364206')" />
+                  </div>
+                </div>
+                <div class="join__top-down">
+                  <div class="join__top-down-left">
+                    <div class="join__top-down-left-header">
+                      <div class="join__top-down-left-header-top">
+                        <div class="join__top-down-left-header-top-circles">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                          >
+                            <path
+                              d="M1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8Z"
+                              stroke="white"
+                              stroke-width="2"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                          >
+                            <path
+                              d="M1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8Z"
+                              stroke="white"
+                              stroke-width="2"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                          >
+                            <path
+                              d="M1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8Z"
+                              stroke="white"
+                              stroke-width="2"
+                            />
+                          </svg>
+                        </div>
+                        <h3 class="join__top-down-left-header-top-title">
+                          $MOTHERLODE
+                        </h3>
+                        <div class="join__top-down-left-header-top-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M19 6V7H20V21H19V22H5V21H4V3H5V2H15V3H16V4H17V5H18V6H19ZM17 19H18V10H12V4H7V5H6V19H7V20H17V19ZM16 8V7H15V6H14V8H16ZM15 14V12H9V14H15ZM15 17V15H9V17H15Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="join__top-down-left-header-bottom">
+                        <span>File</span>
+                        <span>Edit</span>
+                        <span>View</span>
+                      </div>
+                    </div>
+                    <div class="join__top-down-left-body">
+                      <div class="join__top-down-left-image">
+                        <img src="img/join/01.jpg" alt="Image" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="join__top-down-right">
+                    <div class="join__top-down-right-header">
+                      <div class="join__top-down-right-header-top">
+                        <div class="join__top-down-right-header-top-circles">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                          >
+                            <path
+                              d="M1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8Z"
+                              stroke="white"
+                              stroke-width="2"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                          >
+                            <path
+                              d="M1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8Z"
+                              stroke="white"
+                              stroke-width="2"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                          >
+                            <path
+                              d="M1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8Z"
+                              stroke="white"
+                              stroke-width="2"
+                            />
+                          </svg>
+                        </div>
+                        <h3 class="join__top-down-right-header-top-title">
+                          $MOTHERLODE
+                        </h3>
+                        <div class="join__top-down-right-header-top-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M19 6V7H20V21H19V22H5V21H4V3H5V2H15V3H16V4H17V5H18V6H19ZM17 19H18V10H12V4H7V5H6V19H7V20H17V19ZM16 8V7H15V6H14V8H16ZM15 14V12H9V14H15ZM15 17V15H9V17H15Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="join__top-down-right-header-bottom">
+                        <span>File</span>
+                        <span>Edit</span>
+                        <span>View</span>
+                      </div>
+                    </div>
+                    <div class="join__top-down-right-body">
+                      <div class="join__top-down-right-bg">
+                        <img src="img/join/02.jpg" alt="Image" />
+                      </div>
+                      <div class="join__top-down-right-body-menu">
+                        <a
+                          href="#"
+                          data-goto=".about"
+                          class="join__top-down-right-body-menu-item"
+                        >
+                          About
+                        </a>
+                        <a
+                          href="#"
+                          data-goto=".how"
+                          class="join__top-down-right-body-menu-item"
+                        >
+                          How to buy
+                        </a>
+                        <a
+                          href="#"
+                          data-goto=".tokenomics"
+                          class="join__top-down-right-body-menu-item"
+                        >
+                          Tokenomics
+                        </a>
+                        <a
+                          href="#"
+                          data-goto=".join"
+                          class="join__top-down-right-body-menu-item"
+                        >
+                          Join us
+                        </a>
+                      </div>
+                      <div class="join__top-down-right-body-social">
+                        <a
+                          target="_blank"
+                          href="https://x.com/gnomeinbits"
+                          class="join__top-down-right-body-social-item"
+                        >
+                          <img src="img/hero/x.png" alt="X" />
+                          <span>twitter.com</span>
+                        </a>
+                        <!-- <a
+                          href="#"
+                          target="_blank"
+                          class="join__top-down-right-body-social-item"
+                        >
+                          <img src="img/hero/rad.png" alt="Raydium" />
+                          <span>raydium.io</span>
+                        </a> -->
+                        <a
+                          target="_blank"
+                          href="https://t.me/GnomeinBits"
+                          class="join__top-down-right-body-social-item"
+                        >
+                          <img src="img/hero/tel.png" alt="Telegram" />
+                          <span>Telegram</span>
+                        </a>
+                        <a
+                          target="_blank"
+                          href="#"
+                          class="join__top-down-right-body-social-item"
+                        >
+                          <img src="img/hero/dext.png" alt="Dextools" />
+                          <span>dextools.io</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="join__bottom">
+            <div class="join__container">
+              <div class="join__bottom-body">
+                <span>2025 © ALL RIGHTS RESERVED</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container"></div>
+      </footer>
+    </div>
+    <script src="js/app.min.js?_v=20241202114858"></script>
+  </body>
+</html>
